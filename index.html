@@ -1,0 +1,336 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Email App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="min-h-screen flex">
+   <!-- Sidebar -->
+   <div class="w-64 bg-white shadow-md">
+    <div class="p-4 border-b">
+     <h1 class="text-2xl font-bold">
+      Email App
+     </h1>
+    </div>
+    <nav class="p-4">
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-inbox mr-3">
+        </i>
+        Inbox
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-paper-plane mr-3">
+        </i>
+        Sent
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-star mr-3">
+        </i>
+        Starred
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-700 hover:text-blue-500" href="#">
+        <i class="fas fa-trash mr-3">
+        </i>
+        Trash
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 p-6">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6">
+     <h2 class="text-2xl font-bold">
+      Inbox
+     </h2>
+     <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      <i class="fas fa-plus mr-2">
+      </i>
+      Compose
+     </button>
+    </div>
+    <!-- Email List -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+     <div class="divide-y divide-gray-200">
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 1" height="48" src="https://storage.googleapis.com/a1aa/image/hCS6UzRWnioiB1MQMoOuzVYdpcCI9pj8TauHWqqQ7ryH558E.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 1
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 1
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        10:30 AM
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 2" height="48" src="https://storage.googleapis.com/a1aa/image/sgRRleZhUuUxU634gTPQohYHyyFfuUpemovvHjyryiuSJPnnA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 2
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 2
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        9:15 AM
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 3" height="48" src="https://storage.googleapis.com/a1aa/image/q0qeHQh7OejjRUpX90olthlP0o9wdt5pn5EQKANhi20YknzTA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 3
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 3
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        Yesterday
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 4" height="48" src="https://storage.googleapis.com/a1aa/image/NZZChPBHoexBfEbpgLybVFkSjxbkLc31g2M85OvgKZHiknzTA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 4
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 4
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        Yesterday
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 5" height="48" src="https://storage.googleapis.com/a1aa/image/V2s1jPpTZypwH5Kq7E4hVzzTqyOJ3BrcaQv1fFFbL8tOyz5JA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 5
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 5
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        2 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 6" height="48" src="https://storage.googleapis.com/a1aa/image/5TEplpcPfvwsDiAPjA1Ev7xPu9HddygMiWsIeQ6UqsfGJPnnA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 6
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 6
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        2 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 7" height="48" src="https://storage.googleapis.com/a1aa/image/KU104hVrHDLnEVfwuw1L5r0W3g92jG9OBkzpFy7tU5EUyz5JA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 7
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 7
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        3 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 8" height="48" src="https://storage.googleapis.com/a1aa/image/ldS45EjDLgIcAp0T6fTc5gTNfKJzWzvaDWaicKnUxcnmknzTA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 8
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 8
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        3 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 9" height="48" src="https://storage.googleapis.com/a1aa/image/iXoEMTnvTH4dLxE6RVaP8Rz4XkkPqbaeT87pPeHDD8bZknzTA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 9
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 9
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        4 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 10" height="48" src="https://storage.googleapis.com/a1aa/image/1sHvANDAcmrsBlir45ZsR9agSmKghxTDLiFHmlxJNZNH558E.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 10
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 10
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        4 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 11" height="48" src="https://storage.googleapis.com/a1aa/image/5bpZDkNGWkZaE9VFzadQ3f9Lx0QjBYC4d7NFDVvNhMASyz5JA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 11
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 11
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        5 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 12" height="48" src="https://storage.googleapis.com/a1aa/image/qMW24AErmIZLG1mA7FQkSie2T3fACGKHR2bO5d2YKx3hknzTA.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 12
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 12
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        5 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 13" height="48" src="https://storage.googleapis.com/a1aa/image/xWa72OcqMKp5KVZ2IOeVezJfnAYgsRGhFCViKZfLNPSqReceE.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 13
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 13
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        6 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 14" height="48" src="https://storage.googleapis.com/a1aa/image/nOF8q8Zd55pdLRKzepM52fTGQIPvOhfTntfTHgNpgAA6ReceE.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 14
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 14
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        6 days ago
+       </div>
+      </div>
+      <!-- Email Item -->
+      <div class="p-4 flex items-center hover:bg-gray-100 cursor-pointer">
+       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+        <img alt="Profile picture of sender 15" height="48" src="https://storage.googleapis.com/a1aa/image/l9KO4ryYnfRtNSFw8TvezlLBDbLxFefLXl6pkHnV1aWpSeceE.jpg" width="48"/>
+       </div>
+       <div class="flex-1">
+        <h3 class="text-lg font-semibold">
+         Sender 15
+        </h3>
+        <p class="text-gray-600">
+         Subject of the email 15
+        </p>
+       </div>
+       <div class="text-gray-500 text-sm">
+        1 week ago
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
